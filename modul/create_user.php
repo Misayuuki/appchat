@@ -8,7 +8,7 @@
 		$stmt = $pdo->prepare("INSERT INTO users (username, email) VALUES (?, ?)");
 		$stmt->execute([$username, $email]);
 
-		header("Location: read_users.php");
+		header("Location: read_user.php");
 	}
  ?>
 
