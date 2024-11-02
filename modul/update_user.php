@@ -11,7 +11,7 @@
 		$email = $_POST['email'];
 
 		$stmt = $pdo->prepare("UPDATE users SET username = ?, email = ? WHERE id = ?");
-		$stmt->execute($username, $email, $id);
+		$stmt->execute([$username, $email, $id]);
 
 		header("Location: read_user.php");
 	}
