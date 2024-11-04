@@ -17,7 +17,7 @@ $chats = $stmt->fetchAll();
     <td><?= $chat['chat_name'] ?></td>
     <td>
         <a href="update_chat.php?id=<?= $chat['id'] ?>">Edit</a>
-        <a href="delete_chat.php?id=<?= $chat['id'] ?>">Hapus</a>
+        <a href="delete_chats.php?id=<?= $chat['id'] ?>">Hapus</a>
     </td>
 </tr>
 <?php endforeach; ?>
